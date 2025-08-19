@@ -125,19 +125,39 @@ end)
 end)
 
     local creds = window:Tab("脚本区", "6031097229")
-    local credits = creds:section("未知脚本", true)
+    local credits = creds:section("造船寻宝", true)
 
-credits:Button("造船寻宝-卡密-Asu-freejuly", function()
+credits:Button("建筑脚本-卡密-Asu-freejuly", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/MIAN57/-/refs/heads/main/%E9%80%A0%E8%88%B9%E5%AF%BB%E5%AE%9D.lua"))()
 end)
 
-credits:Button("建造一架飞机", function()
+local credits = creds:section("建造一架飞机", true)
+
+credits:Button("刷钱", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/roblox-ye/QQ515966991/refs/heads/main/ROBLOX-CNVIP-XIAOYE.lua"))()
 end)
 
-credits:Button("99夜", function()
+local credits = creds:section("生存99夜", true)
+
+credits:Button("Nights", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/99-Nights-in-the-Forest/refs/heads/main/99%20Nights%20in%20the%20Forest"))()
 end)
+
+local credits = creds:section("种植花园", true)
+
+local credits = creds:section("伐木大亨", true)
+
+local credits = creds:section("敬请期待", true)
+
+local credits = creds:section("敬请期待", true)
+
+local credits = creds:section("敬请期待", true)
+
+local credits = creds:section("敬请期待", true)
+
+local credits = creds:section("敬请期待", true)
+
+local credits = creds:section("敬请期待", true)
 
    local creds = window:Tab("自制脚本", "6031097229")
    local credits = creds:section("力量传奇", true)
