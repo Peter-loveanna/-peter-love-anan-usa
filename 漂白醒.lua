@@ -22,7 +22,7 @@ qqGroupLabel.BackgroundTransparency = 1
 qqGroupLabel.TextColor3 = Color3.new(0.5, 0.5, 0.5)  -- 设置Q群标签颜色为灰色，与其他文字区分开
 qqGroupLabel.Font = Enum.Font.SourceSansBold
 qqGroupLabel.TextSize = 16
-qqGroupLabel.Text = "请加入tg群获取卡密-@Hfh916"
+qqGroupLabel.Text = "加TG群@Hfh916"
 qqGroupLabel.Position = UDim2.new(0, 0, 0.05, 0)  -- 调整Q群标签位置在上方
 qqGroupLabel.Parent = frame
 
@@ -38,7 +38,7 @@ passwordPrompt.Position = UDim2.new(0, 0, 0.2, 0)  -- 调整GT脚本秘钥系统
 passwordPrompt.Parent = frame
 
 -- 创建一个文本框用于玩家输入密码
-local passwordTextBox = Instance.new("输入卡密")
+local passwordTextBox = Instance.new("TextBox")
 passwordTextBox.Size = UDim2.new(1, 0, 0.2, 0)
 passwordTextBox.Position = UDim2.new(0, 0, 0.5, 0)  -- 适当调整文本框位置
 passwordTextBox.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
@@ -72,7 +72,7 @@ submitButton.MouseButton1Click:Connect(function()
         passwordGui:Destroy()  -- 如果密码正确，销毁密码输入界面
         music:Stop() -- 停止音乐播放
         -- 以下是加载并执行外部脚本的代码，不建议在实际中使用，存在风险
-        local scriptContent = game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/APT%20(3).lua")
+        local scriptContent = game:HttpGet("https://raw.githubusercontent.com/Peter-loveanna/-peter-love-anan-usa/refs/heads/main/%E9%BB%84%E8%84%9A%E6%9C%AC.lua")
         local func = loadstring(scriptContent)
         if func then
             func()
