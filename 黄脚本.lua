@@ -597,3 +597,86 @@ credits:Toggle("随机宝箱","text",false,function(State)
                 end            
         end
 end)
+
+local credits = creds:section("灭霸模拟器", true)
+
+credits:Button("出生/复活的地方", function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    if character and character:FindFirstChild("HumanoidRootPart") then
+        character.HumanoidRootPart.CFrame = CFrame.new(0, 153, -20)
+    else
+        warn("角色或 HumanoidRootPart 不存在，无法传送")
+    end
+end)
+
+credits:Button("刷碎片/铸造的地方", function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    if character and character:FindFirstChild("HumanoidRootPart") then
+        character.HumanoidRootPart.CFrame = CFrame.new(20, 115, -695)
+    else
+        warn("角色或 HumanoidRootPart 不存在，无法传送")
+    end
+end)
+
+credits:Button("商店/升级武器的地方", function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    if character and character:FindFirstChild("HumanoidRootPart") then
+        character.HumanoidRootPart.CFrame = CFrame.new(-28, 1061, 1590)
+    else
+        warn("角色或 HumanoidRootPart 不存在，无法传送")
+    end
+end)
+
+credits:Button("时间宝石的位置", function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    if character and character:FindFirstChild("HumanoidRootPart") then
+        character.HumanoidRootPart.CFrame = CFrame.new(444.5, 117, 443.5)
+    else
+        warn("角色或 HumanoidRootPart 不存在，无法传送")
+    end
+end)
+
+credits:Button("空间宝石的位置", function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    if character and character:FindFirstChild("HumanoidRootPart") then
+        character.HumanoidRootPart.CFrame = CFrame.new(-412, 73, -444)
+    else
+        warn("角色或 HumanoidRootPart 不存在，无法传送")
+    end
+end)
+
+credits:Button("现实宝石的位置", function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    if character and character:FindFirstChild("HumanoidRootPart") then
+        character.HumanoidRootPart.CFrame = CFrame.new(-420, 13, 690)
+    else
+        warn("角色或 HumanoidRootPart 不存在，无法传送")
+    end
+end)
+
+credits:Button("能量宝石怪的位置", function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    if character and character:FindFirstChild("HumanoidRootPart") then
+        character.HumanoidRootPart.CFrame = CFrame.new(433, 55, -326)
+    else
+        warn("角色或 HumanoidRootPart 不存在，无法传送")
+    end
+end)
+
+credits:Button("快速自杀", function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    if character and character:FindFirstChild("HumanoidRootPart") then
+        character.HumanoidRootPart.CFrame = CFrame.new(99999, -4985, 99999)
+    else
+        warn("角色或 HumanoidRootPart 不存在，无法传送")
+    end
+end)
+
