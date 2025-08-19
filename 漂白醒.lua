@@ -22,7 +22,7 @@ qqGroupLabel.BackgroundTransparency = 1
 qqGroupLabel.TextColor3 = Color3.new(0.5, 0.5, 0.5)  -- 设置Q群标签颜色为灰色，与其他文字区分开
 qqGroupLabel.Font = Enum.Font.SourceSansBold
 qqGroupLabel.TextSize = 16
-qqGroupLabel.Text = "该脚本不对外开放"
+qqGroupLabel.Text = "加入TG群获取卡密@Hfh916"
 qqGroupLabel.Position = UDim2.new(0, 0, 0.05, 0)  -- 调整Q群标签位置在上方
 qqGroupLabel.Parent = frame
 
@@ -48,7 +48,7 @@ passwordTextBox.TextSize = 18
 passwordTextBox.Parent = frame
 
 -- 创建一个提交按钮
-local submitButton = Instance.new("TextBox")
+local submitButton = Instance.new("TextButton")
 submitButton.Size = UDim2.new(0.3, 0, 0.2, 0)
 submitButton.Position = UDim2.new(0.35, 0, 0.75, 0)  -- 适当调整提交按钮位置
 submitButton.BackgroundColor3 = Color3.new(0, 0.5, 0)
