@@ -38,7 +38,7 @@ passwordPrompt.Position = UDim2.new(0, 0, 0.2, 0)  -- 调整GT脚本秘钥系统
 passwordPrompt.Parent = frame
 
 -- 创建一个文本框用于玩家输入密码
-local passwordTextBox = Instance.new("TextBox")
+local passwordTextBox = Instance.new("请输入卡密")
 passwordTextBox.Size = UDim2.new(1, 0, 0.2, 0)
 passwordTextBox.Position = UDim2.new(0, 0, 0.5, 0)  -- 适当调整文本框位置
 passwordTextBox.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
@@ -48,7 +48,7 @@ passwordTextBox.TextSize = 18
 passwordTextBox.Parent = frame
 
 -- 创建一个提交按钮
-local submitButton = Instance.new("请输入卡密")
+local submitButton = Instance.new("TextBox")
 submitButton.Size = UDim2.new(0.3, 0, 0.2, 0)
 submitButton.Position = UDim2.new(0.35, 0, 0.75, 0)  -- 适当调整提交按钮位置
 submitButton.BackgroundColor3 = Color3.new(0, 0.5, 0)
