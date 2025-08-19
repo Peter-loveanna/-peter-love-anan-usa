@@ -52,7 +52,16 @@ credits:Button("透视", function()
   local Players = game:GetService("Players"):GetChildren() local RunService = game:GetService("RunService") local highlight = Instance.new("Highlight") highlight.Name = "Highlight" for i, v in pairs(Players) do repeat wait() until v.Character if not v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then local highlightClone = highlight:Clone() highlightClone.Adornee = v.Character highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart") highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop highlightClone.Name = "Highlight" end end game.Players.PlayerAdded:Connect(function(player) repeat wait() until player.Character if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then local highlightClone = highlight:Clone() highlightClone.Adornee = player.Character highlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart") highlightClone.Name = "Highlight" end end) game.Players.PlayerRemoving:Connect(function(playerRemoved) playerRemoved.Character:FindFirstChild("HumanoidRootPart").Highlight:Destroy() end) RunService.Heartbeat:Connect(function() for i, v in pairs(Players) do repeat wait() until v.Character if not v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then local highlightClone = highlight:Clone() highlightClone.Adornee = v.Character highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart") highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop highlightClone.Name = "Highlight" task.wait() end end end)
 end)
 
-credits:Slider("旋转速度", "SpinSpeed", 0, 100, false, function(speed)
+credits:Textbox("旋转速度", "输入", function(Value)
+    local speed = tonumber(Value)
+    if not speed then
+        return OrionLib:MakeNotification({
+            Name = "错误",
+            Content = "请输入有效的数字",
+            Time = 2
+        })
+    end
+
     local plr = game:GetService("Players").LocalPlayer
     repeat task.wait() until plr.Character
     local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
@@ -66,9 +75,8 @@ credits:Slider("旋转速度", "SpinSpeed", 0, 100, false, function(speed)
         spinVelocity.AngularVelocity = Vector3.new(0, speed, 0)
         spinVelocity.Parent = humRoot
         spinVelocity.Name = "Spinbot"
-    else
-        spinVelocity.AngularVelocity = Vector3.new(0, speed, 0)
     end
+    spinVelocity.AngularVelocity = Vector3.new(0, speed, 0)
 
     OrionLib:MakeNotification({
         Name = "已设置",
@@ -100,7 +108,9 @@ credits:Button("停止旋转", function()
             Time = 1.5
         })
     end
-end)
+end, Color3.fromRGB(255, 99, 71))
+
+
 
   local credits = creds:section("自瞄功能", true)
 
