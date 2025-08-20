@@ -134,7 +134,7 @@ end)
 local credits = creds:section("建造一架飞机", true)
 
 credits:Button("刷钱", function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/roblox-ye/QQ515966991/refs/heads/main/ROBLOX-CNVIP-XIAOYE.lua"))()
+   loadstring(game:HttpGet("https://rscripts.net/raw/not-patched-infinite-money-money-farm-open-shop_1753743540999_gqxO4z8nzH.txt"))()
 end)
 
 local credits = creds:section("生存99夜", true)
@@ -147,13 +147,30 @@ local credits = creds:section("种植花园", true)
 
 local credits = creds:section("伐木大亨", true)
 
-local credits = creds:section("敬请期待", true)
+local credits = creds:section("战争大亨", true)
 
-local credits = creds:section("敬请期待", true)
+credits:Button("中文脚本", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/refs/heads/main/Games/战争大亨.lua"))()
+end)
 
-local credits = creds:section("敬请期待", true)
+local credits = creds:section("为了1000万美元调整", true)
 
-local credits = creds:section("敬请期待", true)
+credits:Button("free", function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/The-dollar1000000-Jump-Rope-Keyless-Slap-All-Slap-Aura-Free-Gamepass-add-remove-money-47134"))()
+end)
+
+
+local credits = creds:section("进阶的巨人", true)
+
+credits:Button("v4", function()
+   loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/705e7fe7aa288f0fe86900cedb1119b1.lua"))()
+end)
+
+local credits = creds:section("穷小子打工日记", true)
+
+credits:Button("中文脚本", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/QQ-9-2-8-9-50173/refs/heads/main/newsqnb.lua"))()
+end)
 
 local credits = creds:section("敬请期待", true)
 
