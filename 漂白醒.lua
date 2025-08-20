@@ -37,7 +37,7 @@ end)
 
 local GetKeyButton = KeyWindow:AddButton("获取卡密", UDim2.new(0.55, 0, 0.65, 0), function()
     if setclipboard then
-        setclipboard("https://yourwebsite.com/getkey")
+        setclipboard("请加入腾讯频道：pd43735421")
     else
         warn("setclipboard is not available.")
     end
