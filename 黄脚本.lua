@@ -143,6 +143,10 @@ credits:Button("Nights", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/99-Nights-in-the-Forest/refs/heads/main/99%20Nights%20in%20the%20Forest"))()
 end)
 
+credits:Button("AhmadV99", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua)()
+end)
+
 local credits = creds:section("种植花园", true)
 
 local credits = creds:section("伐木大亨", true)
@@ -172,7 +176,11 @@ credits:Button("中文脚本", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/QQ-9-2-8-9-50173/refs/heads/main/newsqnb.lua"))()
 end)
 
-local credits = creds:section("敬请期待", true)
+local credits = creds:section("刀刃球", true)
+
+credits:Button("AgentX771", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AgentX771/ArgonHubX/main/Loader.lua"))()
+end)
 
 local credits = creds:section("敬请期待", true)
 
